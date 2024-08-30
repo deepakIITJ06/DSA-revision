@@ -26,6 +26,7 @@ struct TreeNode {
 class Solution {
 public:
     int maxi = 0;
+    // O(N)
     int diameter(TreeNode* root){
         if(root==NULL){
             return 0;
@@ -35,8 +36,31 @@ public:
         maxi = max(maxi,lh+rh);
         return 1+max(lh,rh); 
     }
+
+    // O(N^2)
+    int findHeight(TreeNode* root) {
+        if(root==NULL) {
+            return 0;
+        }
+        int leftHeight = findHeight(root->left);
+        int rightHeight = findHeight(root->right);
+
+        return max(leftHeight,rightHeight)+1;
+    }
+    void diameter2(TreeNode* root){
+        if(root==NULL){
+            return ;
+        }
+        int lh = findHeight(root->left);
+        int rh = findHeight(root->right);
+        maxi = max(maxi,lh+rh);
+        diameter2(root->left);
+        diameter2(root->right);
+    }
+
     int diameterOfBinaryTree(TreeNode* root) {
-        int a = diameter(root);
+        // int a = diameter(root);   ---> ✅ O(N) solution
+        diameter2(root);
         return maxi;
     }
 };
