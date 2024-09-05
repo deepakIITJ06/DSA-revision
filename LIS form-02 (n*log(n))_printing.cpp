@@ -1,5 +1,12 @@
 #include<bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <set>
+#include <map>
 using namespace std;
+#define int long long
+int mod = 1e9+7;
 
 void solve(){
     int n;
