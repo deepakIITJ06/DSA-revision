@@ -44,5 +44,20 @@ public:
         int n = str.length();
         memset(dp,-1,sizeof(dp));
         return rec(0,n,str)-1;
+
+        // BOTTOM UP
+
+        // int n = str.length();
+        // vector<int> dp(n+1,0);
+        // for(int i=n-1;i>=0;i--) {
+        //     int ans = 1e9;
+        //     for(int j=i;j<n;j++) {
+        //         if(isPalindrome(i,j,str)) {
+        //             ans = min(ans,1+dp[j+1]);
+        //         }
+        //     }
+        //     dp[i] = ans;
+        // }
+        // return dp[0]-1;
     }
 };
