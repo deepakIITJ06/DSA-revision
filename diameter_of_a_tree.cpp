@@ -27,7 +27,7 @@ class Solution {
 public:
     int maxi = 0;
     // O(N)
-    int diameter(TreeNode* root){
+    int diameter(TreeNode* root) {
         if(root==NULL){
             return 0;
         }
