@@ -36,7 +36,7 @@ public:
                 ans = true;
                 break;
             }
-            // for not swapped
+            // for not swapped  
             s1 = x.substr(0,i);
             s2 = y.substr(0,i);
             s3 = x.substr(i,n-i);
