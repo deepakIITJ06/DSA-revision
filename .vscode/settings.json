@@ -61,6 +61,22 @@
     "queue": "cpp",
     "iostream": "cpp",
     "string": "cpp",
-    "unordered_map": "cpp"
+    "unordered_map": "cpp",
+    "__hash_table": "cpp",
+    "__split_buffer": "cpp",
+    "__tree": "cpp",
+    "array": "cpp",
+    "bitset": "cpp",
+    "deque": "cpp",
+    "initializer_list": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "regex": "cpp",
+    "set": "cpp",
+    "span": "cpp",
+    "stack": "cpp",
+    "string_view": "cpp",
+    "unordered_set": "cpp",
+    "valarray": "cpp"
   }
 }
