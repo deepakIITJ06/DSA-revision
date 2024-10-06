@@ -16,7 +16,7 @@ int findLargestMinDistance(vector<int> &boards, int k)
 {
     //    Write your code here.
     int low = 1;
-    int high = accumulate(begin(boards),end(boards),0);
+    int high = accumulate(begin(boards),end(boards),0); // --> don't use this use loop for calculation sum
     int mid,painter,area,ans;
     while(low<=high) {
         mid = low+(high-low)/2;
