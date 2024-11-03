@@ -14,8 +14,7 @@ int mod = 1e9+7;
 
 // simply x rakhein then x k sath map me vector<int> rakhein, then similar to bottom and top view bss saare nodes pe jaye then us curX wale vector me curNode->data ko push kr dein ...simple and so easy
 
-struct Node
-{
+struct Node {
     int data;
     Node* left;
     Node* right;
