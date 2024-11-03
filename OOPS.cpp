@@ -13,6 +13,10 @@ public:
     //     this->age = age;
     // }
 
+    // friend int age() {
+    //     return 18;
+    // }
+
     virtual void override() {
         cout<<"learning polymorphism"<<"\n";
     }
