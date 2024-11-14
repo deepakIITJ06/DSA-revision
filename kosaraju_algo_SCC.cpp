@@ -22,7 +22,7 @@ class Solution
 	}
 
     // 🔴🔴🔴🔴🔴🔴🔴 LOGIC 🔴🔴🔴🔴🔴🔴🔴
-    // sort all the edges a/c to finishing time (using DFS)
+    // sort all the node a/c to finishing time (using DFS)
     // reverse all the edges
     // apply DFS again
 
