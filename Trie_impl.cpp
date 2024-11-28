@@ -29,7 +29,7 @@ struct Node {
         return true;
     }
     void addInTrie(char ch) {
-        links[ch-'a'] = new Node;
+        links[ch-'a'] = new Node();
     }
     Node* getMeNextPointer(char ch) {
         return links[ch-'a'];
