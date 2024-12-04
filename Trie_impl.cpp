@@ -13,7 +13,7 @@ using namespace std;
 using ii = pair<int,int>;
 int mod = 1e9+7;
 
-struct Node {
+struct Node {   
     Node* links[26];
     bool flag;
     Node() {
